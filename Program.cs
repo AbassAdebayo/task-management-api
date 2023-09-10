@@ -24,6 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TASKMANAGEMENT API");
+        c.RoutePrefix = "";
     });
 }
 
